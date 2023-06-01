@@ -1,0 +1,120 @@
+/*** Navbar ***/
+
+.header-total {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background-color: #fff;
+  z-index: 999;
+  box-shadow: 5px 5px 5px #888888;
+}
+
+. {
+  display: flex !important;
+}
+
+.navbar .navbar-nav .nav-link {
+  padding: 20px 15px;
+  color: var(--dark);
+  font-weight: 500;
+  outline: none;
+}
+
+.navbar .navbar-nav .nav-link:hover,
+.navbar .navbar-nav .nav-link.active {
+  color: var(--primary);
+}
+
+.navbar.sticky-top {
+  top: -100px;
+  transition: .5s;
+}
+
+.navbar .dropdown-toggle::after {
+  border: none;
+  /* content: "\f107"; */
+  font-family: "Font Awesome 5 Free";
+  font-weight: 800;
+  vertical-align: middle;
+  margin-left: 5px;
+  transition: .5s;
+}
+
+.navbar .dropdown-toggle[aria-expanded=true]::after {
+  transform: rotate(-180deg);
+}
+
+@media (max-width: 991.98px) {
+  .navbar .navbar-nav .nav-link {
+    margin-right: 0;
+    padding: 10px 0;
+  }
+
+  .navbar .navbar-nav {
+    margin-top: 15px;
+    border-top: 1px solid #EEEEEE;
+  }
+}
+
+@media (min-width: 992px) {
+  .navbar .nav-item .dropdown-menu {
+    display: block;
+    top: calc(100% - 15px);
+    margin-top: 0;
+    opacity: 0;
+    visibility: hidden;
+    transition: .5s;
+  }
+
+  .navbar .nav-item .dropdown-menu-info {
+    display: block;
+    top: calc(100% - 15px);
+    margin-top: 0;
+    opacity: 0;
+    visibility: hidden;
+    transition: .5s;
+    transform: translateX(-60%);
+
+  }
+
+  .navbar .nav-item:hover .dropdown-menu {
+    top: 100%;
+    visibility: visible;
+    transition: .5s;
+    opacity: 1;
+
+  }
+}
+
+.login-home {
+  padding: 1 2%;
+  font-size: 15px;
+  background-color: #FE5D37;
+  border: none;
+}
+
+.signin-home {
+  padding: 1 2%;
+  font-size: 15px;
+  margin-left: 1%;
+  background-color: #6e7dff;
+  border: none;
+}
+
+.navbar-brand img {
+  width: 80px;
+}
+
+.avatar-signin {
+  margin-right: 2%;
+  border-radius: 50%;
+  width: 32px;
+  height: 32px;
+  border: 1px solid #888888;
+}
+
+.button-avatar-signin {
+  border: none;
+  background-color: white;
+}

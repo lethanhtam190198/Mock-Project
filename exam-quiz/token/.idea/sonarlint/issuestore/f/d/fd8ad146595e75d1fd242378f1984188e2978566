@@ -1,0 +1,5 @@
+
+o	java:S115/"ZRename this constant name to match the regular expression '^[A-Z][A-Z0-9]*(_[A-Z0-9]+)*$'.(®•è¢
+n	java:S116"YRename this field "JWT_EXPIRATION" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(¿≈Ú◊
+7
+java:S1170"!Make this final field static too.(¿≈Ú◊

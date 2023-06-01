@@ -1,0 +1,62 @@
+.container.DatHD7 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+}
+
+.row.DatHD7 {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+
+}
+
+#leftPanel#DatHD7 {
+    background-color: #94D6C2;
+    color: #fff;
+    text-align: center;
+    padding-top: 14rem;
+    padding-left: 5rem;
+    padding-right: 5rem;
+}
+
+#rightPanel#DatHD7 {
+    min-height: 415px;
+    background-size: 100%;
+    padding-top: 13rem;
+    padding-left: 5rem;
+    padding-right: 5rem;
+}
+
+/* Credit to bootsnipp.com for the css for the color graph */
+.colorgraph.DatHD7 {
+    height: 10px;
+    border-top: 0;
+    background: #c4e17f;
+    border-radius: 5px;
+    background-image: -webkit-linear-gradient(left, #c4e17f, #c4e17f 12.5%, #f7fdca 12.5%, #f7fdca 25%, #fecf71 25%, #fecf71 37.5%, #f0776c 37.5%, #f0776c 50%, #db9dbe 50%, #db9dbe 62.5%, #c49cde 62.5%, #c49cde 75%, #669ae1 75%, #669ae1 87.5%, #62c2e4 87.5%, #62c2e4);
+    background-image: -moz-linear-gradient(left, #c4e17f, #c4e17f 12.5%, #f7fdca 12.5%, #f7fdca 25%, #fecf71 25%, #fecf71 37.5%, #f0776c 37.5%, #f0776c 50%, #db9dbe 50%, #db9dbe 62.5%, #c49cde 62.5%, #c49cde 75%, #669ae1 75%, #669ae1 87.5%, #62c2e4 87.5%, #62c2e4);
+    background-image: -o-linear-gradient(left, #c4e17f, #c4e17f 12.5%, #f7fdca 12.5%, #f7fdca 25%, #fecf71 25%, #fecf71 37.5%, #f0776c 37.5%, #f0776c 50%, #db9dbe 50%, #db9dbe 62.5%, #c49cde 62.5%, #c49cde 75%, #669ae1 75%, #669ae1 87.5%, #62c2e4 87.5%, #62c2e4);
+    background-image: linear-gradient(to right, #c4e17f, #c4e17f 12.5%, #f7fdca 12.5%, #f7fdca 25%, #fecf71 25%, #fecf71 37.5%, #f0776c 37.5%, #f0776c 50%, #db9dbe 50%, #db9dbe 62.5%, #c49cde 62.5%, #c49cde 75%, #669ae1 75%, #669ae1 87.5%, #62c2e4 87.5%, #62c2e4);
+}
+
+.well.DatHD7 {
+    height: 90vh;
+}
+
+.col-md-8.well.DatHD7 label {
+    font-size: larger;
+    color: #000000;
+    position: relative;
+    float: left;
+    margin-top: 20px;
+}
+
+/* .form-control-input-lg-DatHD7{
+    padding: 10px;
+} */
+
+.space-top {
+    height: 40px;
+}

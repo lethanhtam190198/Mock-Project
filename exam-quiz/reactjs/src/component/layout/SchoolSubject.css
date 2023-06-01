@@ -1,0 +1,89 @@
+.group-card {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+.card-school {
+    width: 350px;
+    height: 508px;
+    border-radius: 20px;
+    background: linear-gradient(to bottom right, #b6e7ff 40%, #49d0fd 100%);
+    position: relative;
+    padding: 1.8rem;
+    border: 2px solid #c3c6ce;
+    transition: 0.5s ease-out;
+    overflow: visible;
+    margin: 30px;
+   }
+
+   
+   .card-details {
+    color: black;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 100%;
+    gap: .5em;
+   }
+   .group-button {
+    transform: translate(-50%, 100%);
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    transition: 0.3s ease-out;
+    position: absolute;
+    opacity: 0;
+    padding: .5rem 1rem;
+    left: 50%;
+    bottom: 0;
+    }
+   .card-button1 { 
+    border-radius: 1rem;
+    border: none;
+    background-color: #008bf8;
+    color: #fff;
+    font-size: 2rem;
+    padding: .5rem 1rem;
+    margin: 5px;
+   }
+   .card-button2 {
+    border-radius: 1rem;
+    border:1px solid #008bf8;
+    background-color: #fff;
+    padding: .5rem 1rem;
+    margin: 5px;
+    left: 50%;
+    bottom: 0;
+   }
+   .navbar-brand1{
+    color: #fff;
+    font-size: 2rem;
+    text-decoration: none;
+   }
+   .navbar-brand2{
+    color: #008bf8;
+    font-size: 2rem;
+    text-decoration: none;
+   }
+   .text-body {
+    color: rgb(134, 134, 134);
+   }
+   
+   /*Text*/
+   .text-title {
+    font-size: 1.5em;
+    font-weight: bold;
+   }
+   
+   /*Hover*/
+   .card-school:hover {
+    border-color: #008bf8;
+    box-shadow: 0 4px 18px 0 rgba(0, 0, 0, 0.25);
+   }
+   
+   .card-school:hover .group-button {
+    transform: translate(-50%, 0%);
+    opacity: 1;
+   }

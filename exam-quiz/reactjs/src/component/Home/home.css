@@ -1,0 +1,258 @@
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:400,600,700|Roboto:400,500,700|Source+Sans+Pro:400,600,700|Lato:400,700|Noto+Sans:400,700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Charm&family=Exo+2:wght@100&family=Lemonada&family=Lobster&family=Pacifico&family=Playball&family=Roboto+Mono:ital,wght@1,100&family=Ultra&family=Varela+Round&display=swap');
+
+.home-1 {
+  margin: 0% 10%;
+}
+.space {
+  margin-bottom: 40px;
+}
+
+.img-home-1 {
+  width: 95%;
+  height: 95%;
+}
+.home-2-title-kiemtra {
+  font-family: 'Pacifico', cursive;
+  font-size: 2rem;
+}
+.home-3-title-giaovien {
+  font-family: 'Pacifico', cursive;
+  font-size: 2rem;
+}
+
+.title-1-home-1 {
+  font-family: 'Pacifico', cursive;
+  display: flex;
+  justify-content: center;
+  font-size: 2rem;
+}
+.title-1 {
+  text-align: center;
+  font-family: 'Lobster', cursive;
+}
+
+.underline {
+  border-bottom: 2px solid black;
+  display: inline-block;
+  margin-bottom: -2px;
+  font-size: 4rem;
+}
+
+.container {
+  font-family: 'Open Sans', sans-serif;
+}
+
+
+.home-2 {
+  margin: 5% 10%;
+}
+
+.onluyen {
+  display: flex;
+}
+
+.kiemtra {
+  display: flex;
+}
+
+
+.body1 {
+  font-family: 'Poppins', sans-serif;
+
+  color: #48494a;
+  /* background-image: url(../images/body-bg.jpg); */
+}
+
+
+.call_to-btn {
+  display: inline-block;
+  padding: 12px 20px;
+  border-radius: 10px;
+  font-size: 15px;
+  text-transform: uppercase;
+  background-color: #fec913;
+  border: 1px solid transparent;
+  color: #fff;
+  transition: all 0.3s ease 0s;
+}
+
+.hero_section .call_to-btn {
+  padding: 12px 35px;
+}
+
+.call_to-btn img {
+  width: 18px;
+  margin-left: 10px;
+}
+
+.call_to-btn:hover,
+.btn_on-hover:hover {
+  color: #fff;
+  -webkit-box-shadow: 0px 5px 10px -5px rgba(0, 0, 0, 0.7);
+  -moz-box-shadow: 0px 5px 10px -5px rgba(0, 0, 0, 0.7);
+  box-shadow: 0px 5px 10px -5px rgba(0, 0, 0, 0.7);
+  color: #fff;
+  transform: translateY(-7px);
+}
+
+/*header section*/
+
+
+
+.top_container {
+  height: 95vh;
+  position: relative;
+}
+
+.top_container::before {
+  content: "";
+  position: absolute;
+  width: 50%;
+  height: 95%;
+  background: url(../images/hero-bg.png);
+  background-size: cover;
+  background-position: right bottom;
+  background-repeat: no-repeat;
+  z-index: -1;
+}
+
+.top_container.sub_pages::before {
+  background-size: 400px 200px;
+  background-position: top left;
+}
+
+.top_container.sub_pages {
+  height: 35vh;
+}
+
+.top_container.sub_page {
+  height: auto;
+}
+
+
+.hero-container {
+  display: flex;
+  padding-top: 50px;
+  padding-bottom: 75px;
+}
+
+.hero_detail-box {
+  width: 45%;
+}
+
+.hero_img-container {
+  width: 55%;
+}
+
+.hero_detail-box {
+  color: #fefeff;
+}
+
+.hero_detail-box h1 {
+  text-transform: uppercase;
+  font-size: 50px;
+  color: #fec913;
+  font-weight: bold;
+}
+
+
+.hero_detail-box p {
+  margin-top: 20px;
+  margin-bottom: 35px;
+}
+
+.h3welcome {
+  color: white;
+}
+
+.div-home-3 {
+  background-color: #dbdfff;
+
+}
+
+.home-3 {
+  margin: 2% 10%;
+  padding-top: 3%;
+}
+
+.home-3-title-1 {
+  font-size: 1.2rem;
+  letter-spacing: normal;
+  line-height: 1.25;
+  padding-top: 5%;
+}
+
+.home-3-title-p {
+  padding-top: 5%;
+}
+
+.img-home-3 {
+  height: 90%;
+  width: 90%;
+}
+
+.home-3-title {
+  padding-bottom: 5%;
+}
+
+.title-1 {
+  display: flex;
+  justify-content: center;
+}
+
+.picture-home2 {
+  margin-left: 25%;
+}
+
+
+.card {
+  width: 300px;
+  height: 400px;
+  background: #F8FBFE;
+  box-shadow: rgba(81, 81, 81, 0.4) 0px 2px 4px, rgba(109, 109, 109, 0.3) 0px 7px 13px -3px, rgba(75, 75, 75, 0.2) 0px -3px 0px inset;
+  margin: 40px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.introduce {
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+}
+
+.text-card {
+  margin: 5%;
+}
+
+.center {
+  display: flex;
+  justify-content: center;
+  font-family: 'Pacifico', cursive;
+  font-size: 2rem;
+}
+
+.thongke {
+  text-align: center;
+}
+.total-thongke {
+  display: flex;
+  justify-content: center;
+
+}
+.centertt {
+  width: 10%;
+}
+.title-1-yoursmile {
+  font-family: 'Pacifico', cursive;
+}
+.title-1-text-welcome {
+  /* font-family: 'Charm', cursive; */
+  font-size: 1.2rem;
+}
+
+.thong-ke-dangki {
+  background-color: #dbdfff;
+  padding: 3%;
+}

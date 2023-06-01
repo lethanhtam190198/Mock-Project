@@ -1,0 +1,397 @@
+
+  /*flashcard*/
+.flashcard{
+  height: 44rem;
+  background-image: url('../../../public/images/tivi.png');
+  background-repeat: no-repeat;
+  background-attachment: local;  
+  background-size:1140px 1100px;
+  background-position: 50% 65%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-items: center;
+  
+}
+.container_f,
+.flip-box,
+.front,
+.back {
+  width: 580px;
+  height: 355px;
+}
+
+.container_f,
+.flip_box {
+  position:relative;
+  
+}
+
+.front,
+.back {
+  border-radius: 18px;
+  position: absolute;
+  border: 3px solid;
+  -webkit-backface-visibility: hidden;
+  -moz-backface-visibility: hidden;
+  backface-visibility: hidden;
+}
+
+.container_f{
+  top: 26%;
+  -moz-transform: perspective(1200px);
+  -webkit-perspective: 1200px;
+  perspective: 1200px;
+  
+}
+
+.flip_box {
+  
+  transition: all 0.5s ease-out;
+  -webkit-transform-style: preserve-3d;
+  -moz-transform-style: preserve-3d;
+  transform-style: preserve-3d;
+}
+
+.front {
+  background-color: #ffffff;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.f_title {
+  padding: 15px;
+  font-size: 25px;
+}
+.f_answer{
+  margin-top: -8px;
+  font-size: 22px;
+}
+.back {
+  background-color: #8be0ff;
+  -webkit-transform: rotateY(180deg);
+  -moz-transform: rotateY(180deg);
+  -ms-transform: rotateY(180deg);
+  transform: rotateY(180deg);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.b_question{
+  font-size: 50px;
+}
+
+.b_text {
+  font-size: 1.4em;
+  line-height: 28px;
+  padding-top: 10px;
+  opacity: 0.85;
+}
+
+.b_button {
+  position: absolute;
+  left: 36px;
+  bottom: 38px;
+  width: 150px;
+  height: 52px;
+  background-color: #C30C3D;
+  transition: all 0.3s;
+}
+
+.b_button:hover {
+  background-color: #E30143;
+}
+
+.flipped {
+  -webkit-transform: rotateY(-180deg);
+  -moz-transform: rotateY(-180deg);
+  -ms-transform: rotateY(-180deg);
+  transform: rotateY(-180deg);
+}
+
+.r_wrap {
+  position: absolute;
+  right: 40px;
+  bottom: 12px;
+}
+
+.b_round,
+.s_round {
+  position: absolute;
+  right: 0px;
+  bottom: 0px;
+  width: 52px;
+  height: 52px;
+  border-radius: 50%;
+  background-color: #423642;
+  transition: all 0.2s linear;
+}
+
+.b_round {
+  opacity: 0;
+  background-color: #423642;
+}
+
+.b_round_hover {
+  transform: scale(1.37);
+  opacity: 0.4;
+}
+
+.b_round_back_hover {
+  background-color: #574957;
+}
+
+.s_round_click {
+  transform: scale(1.7);
+}
+
+.s_round_back {
+  background-color: #423642;
+}
+
+.s_arrow {
+  width: 52px;
+  height: 52px;
+  background-image: url('https://img-fotki.yandex.ru/get/194549/29644339.5/0_d6c60_1d7815f0_orig');
+  background-color: transparent;
+  transition: all 0.35s linear;
+}
+
+.s_arrow_rotate {
+  transform: rotate(-180deg);
+}
+
+.button_f {
+  color: #ecf0f1;
+  font-size: 17px;
+  background-color: #e67e22;
+  border: 1px solid #f39c12;
+  border-radius: 5px;
+  padding: 10px;
+  box-shadow: 0px 6px 0px #d35400;
+  transition: all .1s;
+ }
+ 
+ .button_f:active {
+  box-shadow: 0px 2px 0px #d35400;
+  position: relative;
+  top: 2px;
+ }
+
+ button {
+  -webkit-appearance: none;
+  background: transparent;
+  border: 0;
+  outline: 0;
+}
+/*chuyen trang*/
+.paginate {
+  margin: 10px;
+  width: 50px;
+  height: 50px;
+  cursor: pointer;
+  transform: translate3d(0, 0, 0);
+  top: 50%;
+  margin-top: -20px;
+  -webkit-filter: drop-shadow(0 2px 0px rgba(0, 0, 0, 0.2));
+  
+}
+.paginate i {
+  position: absolute;
+  top: 40%;
+  left: 0;
+  width: 50px;
+  height: 5px;
+  border-radius: 2.5px;
+  background: #ff7344;
+  transition: all 0.15s ease;
+}
+.paginate.left {
+  right: 58%;
+  
+}
+.paginate.left i {
+  transform-origin: 0% 50%;
+}
+.paginate.left i:first-child {
+  transform: translate(0, -1px) rotate(40deg);
+}
+.paginate.left i:last-child {
+  transform: translate(0, 1px) rotate(-40deg);
+}
+.paginate.left:hover i:first-child {
+  transform: translate(0, -1px) rotate(30deg);
+}
+.paginate.left:hover i:last-child {
+  transform: translate(0, 1px) rotate(-30deg);
+}
+.paginate.left:active i:first-child {
+  transform: translate(1px, -1px) rotate(25deg);
+}
+.paginate.left:active i:last-child {
+  transform: translate(1px, 1px) rotate(-25deg);
+}
+.paginate.left[data-state=disabled] i:first-child {
+  transform: translate(-5px, 0) rotate(0deg);
+}
+.paginate.left[data-state=disabled] i:last-child {
+  transform: translate(-5px, 0) rotate(0deg);
+}
+.paginate.left[data-state=disabled]:hover i:first-child {
+  transform: translate(-5px, 0) rotate(0deg);
+}
+.paginate.left[data-state=disabled]:hover i:last-child {
+  transform: translate(-5px, 0) rotate(0deg);
+}
+.paginate.right {
+  left: 58%;
+}
+.paginate.right i {
+  transform-origin: 100% 50%;
+}
+.paginate.right i:first-child {
+  transform: translate(0, 1px) rotate(40deg);
+}
+.paginate.right i:last-child {
+  transform: translate(0, -1px) rotate(-40deg);
+}
+.paginate.right:hover i:first-child {
+  transform: translate(0, 1px) rotate(30deg);
+}
+.paginate.right:hover i:last-child {
+  transform: translate(0, -1px) rotate(-30deg);
+}
+.paginate.right:active i:first-child {
+  transform: translate(1px, 1px) rotate(25deg);
+}
+.paginate.right:active i:last-child {
+  transform: translate(1px, -1px) rotate(-25deg);
+}
+.paginate.right[data-state=disabled] i:first-child {
+  transform: translate(5px, 0) rotate(0deg);
+}
+.paginate.right[data-state=disabled] i:last-child {
+  transform: translate(5px, 0) rotate(0deg);
+}
+.paginate.right[data-state=disabled]:hover i:first-child {
+  transform: translate(5px, 0) rotate(0deg);
+}
+.paginate.right[data-state=disabled]:hover i:last-child {
+  transform: translate(5px, 0) rotate(0deg);
+}
+.paginate[data-state=disabled] {
+  opacity: 0.3;
+  cursor: default;
+}
+.counter {
+  text-align: center;
+  width: 10%;
+  margin-top: -15px;
+  font-size: 30px;
+  font-family: Helvetica, sans-serif;
+  text-shadow: 0px 2px 0px rgba(0, 0, 0, 0.2);
+  color: #ff7344;
+}
+/*group câu hỏi*/
+.group_question{
+margin-top: 10%;
+margin-bottom: 10%;
+display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+
+}
+@font-face {
+font-family: 'Lobster';
+font-style: normal;
+font-weight: 400;
+font-display: swap
+}
+.group_question_title{
+margin-bottom: 15px;
+font-size: 40px;
+font-family: 'Lobster', cursive;
+}
+.card_t {
+  cursor: pointer;
+  width: 800px;
+  height:auto;
+  margin-bottom: 20px;
+  background: rgb(181, 216, 255);
+  border-radius: 5px;
+  border: 1px solid rgba(0, 0, 255, .2);
+  transition: all .2s;
+  box-shadow: 12px 12px 2px 1px rgba(0, 0, 255, .2);
+ }
+ 
+ .card_t:hover {
+  box-shadow: -12px 12px 2px -1px rgba(0, 0, 255, .2);
+ }
+ .card_title{
+  padding:15px;
+  font-size: 25px;
+ }
+
+
+/*nut báo cáo*/
+ .button_r {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  background-color: rgb(38, 31, 31);
+  border: none;
+  font-weight: 600;
+  margin-left: 51rem;
+  margin-top: -13rem;
+  box-shadow: 0px 0px 20px rgba(255, 72, 72, 0.164);
+  cursor: pointer;
+  transition-duration: .3s;
+  overflow: hidden;
+  position: relative;
+}
+
+.svgIcon {
+  width: 12px;
+  transition-duration: .3s;
+}
+
+.svgIcon path {
+  fill: white;
+}
+
+.button_r:hover {
+  width: 140px;
+  border-radius: 50px;
+  transition-duration: .3s;
+  background-color: rgb(255, 69, 69);
+  align-items: center;
+}
+
+.button_r:hover .svgIcon {
+  width: 50px;
+  transition-duration: .3s;
+  transform: translateY(60%);
+}
+
+.button_r::before {
+  position: absolute;
+  top: -20px;
+  content: "Báo Cáo";
+  color: white;
+  transition-duration: .3s;
+  font-size: 2px;
+}
+
+.button_r:hover::before {
+  font-size: 13px;
+  opacity: 1;
+  transform: translateY(30px);
+  transition-duration: .3s;
+}
+
+
+  
